@@ -1,0 +1,26 @@
+<script>
+    //this -: this is the keyword used for the refer the current object of the class
+    class Cal {
+        constructor(x,y) {
+            this.x = x;
+            this.y = y;
+        }
+        sum(){
+            var sum = this.x + this.y;
+            console.log(sum)
+        }
+        sub(){
+            var sub = this.x - this.y;
+            console.log(sub)
+        }
+    }
+
+    const cal = new Cal(10,20)
+    cal.sum();
+    cal.sub();
+    
+
+
+
+
+</script>

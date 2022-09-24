@@ -1,0 +1,14 @@
+<script>
+
+    function prom(isLogedIn) {
+        return new Promise(function (res, rej) {
+            if (isLogedIn) {
+                res('succsse...')
+            } else {
+                rej('fail...')
+            }
+        });
+    }
+
+    console.log(prom(true))
+</script>

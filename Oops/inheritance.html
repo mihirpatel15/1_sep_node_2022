@@ -1,0 +1,25 @@
+<script>
+    
+    class Student {   //parent/BaseClass
+        Info(name) {
+            console.log('Personal Info....')
+            console.log(name)
+            
+        }
+    }
+    class Employee extends Student{   //Child/Derived...
+        InfoEmp(company) {
+            console.log('Professional Info....')
+            console.log(company)
+            
+        }
+    }
+
+    
+
+    const parth = new Employee;
+    parth.Info('parth')
+    parth.InfoEmp('TOps')
+    
+
+</script>

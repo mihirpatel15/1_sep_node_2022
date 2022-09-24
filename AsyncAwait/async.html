@@ -1,0 +1,29 @@
+<script>
+    function show() {
+        console.log('Waiting...')
+        // const prom = new Promise((res, rej) => {
+        //     setTimeout(() => res('loaded...'), 3000)
+        // })
+
+        // const result = await prom;
+        // alert(result)
+
+        return new Promise((res, rej) => {
+            setTimeout(() => res('loaded...'), 3000)
+        })
+
+    }
+
+
+    const call = async () => {
+        const result = await show();
+        alert(result);
+    }
+    call()
+
+
+    // show();
+    // console.log('hiiii')
+
+
+</script>

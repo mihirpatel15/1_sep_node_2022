@@ -1,0 +1,12 @@
+<script>
+    const isLogedIn=true;
+    const promp = new Promise(function (res, rej) {
+        if (isLogedIn) {
+            res('success fully resolve...')
+        } else {
+            rej('sorry load to fail....')
+        }
+
+    })
+    console.log(promp)
+</script>

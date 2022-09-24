@@ -1,0 +1,15 @@
+<script>
+    //json-:stand for javascript object Notation
+    //is the data exchange foramte
+    //json is the platform independnt..
+
+    var person = {
+        name: 'kaushal',
+        address: 'surat'
+    }
+
+    var JsonData = JSON.stringify(person)
+    // console.log(JsonData.name)
+    var jsonObject = JSON.parse(JsonData)
+    console.log(jsonObject.name);
+</script>

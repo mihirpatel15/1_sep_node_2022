@@ -1,0 +1,29 @@
+<script>
+
+    function prom(isLogedIn) {
+        return new Promise(function (res, rej) {
+            if (isLogedIn) {
+                res('success...')
+            } else {
+                rej('fail...')
+            }
+        });
+    }
+
+    // const success = (result)=>{
+    //     console.log(result)
+    // }
+    // const fail = (result)=>{
+    //     console.log(result)
+    // }
+
+    //prom(false).then(success).catch(fail)
+
+    //OR
+
+    prom(false).then((result)=>{
+        console.log(result)
+    }).catch((fail)=>{
+        console.log(fail)
+    })
+</script>
